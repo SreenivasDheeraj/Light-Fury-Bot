@@ -7,7 +7,7 @@ import math
 import random
 import time
 import json
-
+from pathlib import Path 
 import discord
 import youtube_dl
 from async_timeout import timeout
@@ -21,7 +21,7 @@ bot = commands.Bot(command_prefix = ".")
 
 ###########################################-----Importing cogs-----####################################################################
 import os
-for cog in os.listdir(".\\Cog"):
+for cog in Path("Cog"):
     if cog.endswith(".py"):
         try:
             cog = f"Cog.{cog.replace('.py','')}"
