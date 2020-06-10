@@ -21,7 +21,7 @@ bot = commands.Bot(command_prefix = ".")
 
 ###########################################-----Importing cogs-----####################################################################
 import os
-for cog in os.listdir("Cog"):
+for cog in os.listdir(os.path.abspath("Cog")):
     if cog.endswith(".py"):
         try:
             cog = f"Cog.{cog.replace('.py','')}"
