@@ -17,7 +17,7 @@ from itertools import cycle
 
 ###########################################-----Bot Initialisation-----#######################################################
 
-bot = commands.Bot(command_prefix = ".")
+bot = commands.Bot(command_prefix = "")
 
 ###########################################-----Importing cogs-----####################################################################
 import os
