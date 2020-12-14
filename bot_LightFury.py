@@ -46,4 +46,4 @@ status = cycle(["Senorita","Bad Things","Havana"])
 async def change_status(self):
     await bot.change_presence(activity = discord.Game(next(self.bot.status)))
 
-bot.run("BOT TOKEN HERE")
+bot.run(TOKEN)
